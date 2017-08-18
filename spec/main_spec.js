@@ -14,18 +14,10 @@ describe("测试描述", function(){
 
     it("测试用例1", function(){
 
-        var result = main();
-        var expect_string = '';
+        var result = main(1);
+        var expect_string = '0,3';
         
         expect(expect_string).to.equal(result);
     });
 
-    it("测试用例2", function(){
-
-        main();
-        var result = _.flatten(console.log.args).join("\n");
-        var expect_string = '';
-
-        expect(expect_string).to.equal(result);
-    });
 });
